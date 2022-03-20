@@ -32,7 +32,6 @@ Route::group(['middleware'=>['Auth.Check']],function (){
     Route::get('/edit-post',[PostController::class,'editPost'])->name('edit.post');
     Route::get('/full-post/{id}',[PostController::class,'fullPost'])->name('full.post');
     Route::get('/edit-user',[UserController::class,'editUser'])->name('edit.user');
-    Route::get('/store-post',[LikeController::class,'store_PostID'])->name('store-post.id');
 
 });
 
